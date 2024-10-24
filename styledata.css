@@ -1,0 +1,24 @@
+
+body{
+    background-image: url(../Tugas/foto.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 710px;
+    height: 450px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 50px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(50px);
+    margin-bottom: 20px;
+    color:black;
+    
+}
+

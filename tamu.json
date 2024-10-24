@@ -1,0 +1,47 @@
+[
+    {
+        "nama": "John Doe",
+        "alamat": "Jl.Mawar 123",
+        "telp": "08123456789",
+        "opsi": "Umum",
+        "jk": "Laki-Laki",
+        "komentar": "Acara sangat bagus!",
+        "waktu": "2024-10-24 14:57 PM"
+    },
+    {
+        "nama": "Jane Smith",
+        "alamat": "Jl. Melati 456",
+        "telp": "08223456789",
+        "opsi": "Anggota",
+        "jk": "Perempuan",
+        "komentar": "Senang bisa berpartisipasi\ud83d\ude0a",
+        "waktu": "2024-10-24 15:12 PM"
+    },
+    {
+        "nama": "Andi Susanto ",
+        "alamat": "Jl. Kenanga",
+        "telp": "08134567890",
+        "opsi": "Tamu",
+        "jk": "Laki-Laki",
+        "komentar": "Layanan cukup memuaskan\ud83d\udc4c",
+        "waktu": "2024-10-24 15:13 PM"
+    },
+    {
+        "nama": "Maria Ulfa",
+        "alamat": "Jl. Dahlia 321",
+        "telp": "05345678901",
+        "opsi": "Umum",
+        "jk": "Perempuan",
+        "komentar": "Akan kembali lagi nanti\ud83d\ude09",
+        "waktu": "2024-10-24 15:13 PM"
+    },
+    {
+        "nama": "Budi Santoso",
+        "alamat": "Jl. Cempaka",
+        "telp": "08567890123",
+        "opsi": "Anggota",
+        "jk": "Laki-Laki",
+        "komentar": "Acara sangat informatif\ud83e\udd29",
+        "waktu": "2024-10-24 15:15 PM"
+    }
+]
