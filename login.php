@@ -1,28 +1,30 @@
+
 <?php
     session_start();
     if(!empty($_SESSION['username'])){
-        header('location:bukutamu.php');
+        header('location:read.php');
     }
 
 $akun = [
     ["username" => "Haliza", "password" => "Haliza123"],
-    ["username" => "Ocha","password" => "Ocha123"],
+    ["username" => "Sultan","password" => "Sultan123"],
     ["username" => "Budhi","password" => "Budhi123"],
     ["username" => "Ticil","password" => "Ticil123"]
     ];
 
-
+    
     $kondisi = 0;
+
     if(isset($_POST ['submit'])){
+        
         $kondisi = 1;
         foreach ($akun as $akn) {
             if($akn['username']==$_POST['username']&& $akn ['password']==$_POST['password']){
             $_SESSION['username']=$akn['username'];
-            header('location:bukutamu.php');
-
-           
-                                   
+            header('location:read.php');
+               
         }else{
+            // diberikan peringatan ketika salah makanya di berikan kondisi 2
             $kondisi = 2;
         }
     }
@@ -34,33 +36,55 @@ $akun = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="stylelogin.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
+    <title>Belajar Form</title>
+    <link rel="stylesheet" href="styleslogin.css">
+<style>
+     body {
+            background-image: url(../TUGAS/gambar1.jpg);
+            background-size: cover; /* Agar gambar memenuhi seluruh area */
+            background-repeat: no-repeat; /* Tidak mengulang gambar */
+        }
+</style>
+    
 </head>
 <body>
- <div class = "login"> <center><h2>Login</h2></center>
-    <div class="login-container">
-        
-        <form class = "" method = "post">
-            <div class="input-group">
-                <i class="fas fa-user"></i>
-                <input type="text" name="username"placeholder="Username">
-            </div>
-            <div class="input-group">
-                <i class="fas fa-lock"></i>
-                <input type="password" name="password"placeholder="Password">
-            </div>
-            <button type="submit" name= "submit" class="login-btn">Login</button>
+    <div class="nav">
 
+        <center><ul>
+            <h2>SELAMAT DATANG PADA HALAMAN LOGIN😊</h2>
+        </ul></center>
 
-            <?php if( $kondisi ==2) { ?>
-                <center><p>Username/Password kamu salah!😭</p></center>
-            <?php } ?>
-        </form>
     </div>
-</div>
+
+<!-- <div class= "form-container"> 
+    <form action="" method="post">
+        <h2>Login Karyawan</h2>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <input type="submit" name="submit" value="Login"> -->
+
+    <form action="" method="post">
+        <h2>Login Karyawan</h2>
+        <input type="text" name="username" placeholder="Masukan Username">
+        <input type="password" name="password" placeholder="Masukan Password">
+        <input type="submit" name="submit" value="Login">
+
+        <?php if( $kondisi ==2) { ?>
+        <center><p>Username/Password kamu salah!😭</p></center>
+    <?php } ?>
+
+</form>
+<!-- </div> -->
 
 </body>
 </html>
+
+
+
+
